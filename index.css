@@ -1,0 +1,23 @@
+
+.logo {
+    display: block;
+    margin: 30px auto 10px auto;
+    width: 120px;
+}
+
+
+h1 {
+    color: #6C3483;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+p{
+    font-weight: bold;
+    margin-left: 40px;
+}
+#list{
+    color: #6C3483;
+    margin-left: 40px;
+}

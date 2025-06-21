@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Product List</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/list.css}">
+</head>
+<body>
+    <div th:replace="fragment/header :: header"></div> 
+
+    <a th:href="@{/}" id="back">Back</a>
+
+    <h3>Product List</h3>
+
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+
+        <th:block th:each="product, state : ${products}">
+            <tr th:style="${state.odd} ? 'background-color:#D5B69A' : 'background-color:#9AB7D5'">
+                <td th:text="${product.code}"></td>
+                <td th:text="${product.name}"></td>
+                <td th:text="|${product.price} $|"></td>
+                <td th:text="${product.quantity}"></td>
+                <td>
+                    <img th:if="${product.image}" th:src="@{|/images/${product.image}|}" width="50px" height="50px">
+                    <img th:unless="${product.image}" th:src="@{/images/no-image.png}" width="50px" height="50px">
+                </td>
+                <td>
+                    <form th:action="@{|/products/${product.id}/edit|}" method="get">
+                        <button type="submit" class="btn btn-edit">Edit</button>
+                    </form>
+                    <form th:action="@{|/products/${product.id}/delete|}" method="post">
+                        <button type="submit" class="btn btn-delete">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        </th:block>
+
+    </table>
+
+    <a th:href="@{/products/create}" class="btn">Add Product</a>
+</body>
+</html>

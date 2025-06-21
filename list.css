@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2;
+}
+
+h1 {
+    text-align: center;
+    color: #6C3483;
+    font-weight: bold;
+}
+h2{
+    color: #6C3483;
+    margin-left: 30px;
+}
+#back{
+    color: #6C3483;
+    margin-left: 30px;
+}
+
+table {
+    
+    width: 95%;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th{
+    background-color: #c5acd5;
+    font-weight: bold;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+/* Style du bouton Add Product */
+/* Style du bouton Add Product */
+.btn {
+    background-color: #6C3483; /* Couleur principale du site */
+    color: white;
+    
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+    margin-top: 20px;  /* Espace entre le tableau et le bouton */
+    margin-bottom: 30px;  /* Espace en bas de la page */
+    margin-left: 20px;  /* Centrer le bouton horizontalement */
+    margin-right: 20px;
+}
+
+.btn:hover {
+    background-color: #5b2981; /* Légère variation pour l'effet hover */
+    text-decoration: none;
+}
+.btn-edit {
+    background-color: #9d9594;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #5b2981;
+}
+
+/* Bouton Delete */
+.btn-delete {
+    background-color: #9d9594;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #5b2981;
+}
+
+/* Centrage des actions */
+td:last-child {
+    text-align: center;
+}

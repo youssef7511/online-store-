@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 120px; 
+}
+
+h1 {
+    margin-top: 10px;
+    color: #6C3483;
+    font-size: 24px;
+    font-weight: bold;
+}
